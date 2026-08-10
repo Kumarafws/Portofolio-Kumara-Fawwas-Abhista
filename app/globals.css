@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+}
+
+:root { color-scheme: light; --background: oklch(0.98 0.005 260); --foreground: oklch(0.18 0.02 260); --card: oklch(1 0 0); --card-foreground: oklch(0.18 0.02 260); --primary: oklch(0.28 0.04 260); --primary-foreground: oklch(0.98 0.005 260); --muted: oklch(0.94 0.01 260); --muted-foreground: oklch(0.48 0.03 260); --border: oklch(0.88 0.02 260); --ring: oklch(0.65 0.15 200); }
+.dark { color-scheme: dark; --background: oklch(0.12 0.015 255); --foreground: oklch(0.96 0.01 255); --card: oklch(0.16 0.02 255); --card-foreground: oklch(0.96 0.01 255); --primary: oklch(0.88 0.02 255); --primary-foreground: oklch(0.12 0.015 255); --muted: oklch(0.21 0.02 255); --muted-foreground: oklch(0.68 0.03 255); --border: oklch(1 0 0 / 12%); --ring: oklch(0.75 0.15 195); }
+
+* { @apply border-border outline-ring/50; }
+html { scroll-behavior: smooth; background: var(--background); }
+body { @apply bg-background text-foreground font-sans; }
+::selection { background: oklch(0.78 0.15 195 / 25%); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
