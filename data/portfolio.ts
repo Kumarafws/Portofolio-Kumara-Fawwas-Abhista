@@ -72,7 +72,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'manajmene-sosmed', 
-    name: 'Manajemen Sosial Media', 
+    name: 'Social media management', 
     eyebrow: 'Social media management system', 
     category: 'Frontend web', 
     accent: 'cyan',
