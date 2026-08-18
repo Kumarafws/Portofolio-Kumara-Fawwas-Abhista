@@ -21,7 +21,7 @@ export type Project = {
 
 export const profile = {
   name: 'Kumara Fawwas Abhista',
-  role: 'Information Systems Graduate & Full-Stack Web Developer',
+  role: 'Information Systems Graduate &  Web Developer',
   university: 'Universitas Ahmad Dahlan',
   email: 'kumarafawwas@gmail.com',
   github: 'https://github.com/kumarafws',
@@ -50,10 +50,11 @@ export const projects: Project[] = [
     challenges: 'Specific project challenges have not been documented yet.', 
     outcome: 'A practical information system project demonstrating full-stack web development fundamentals.',
     github: 'https://github.com/kumarafws/PPDB-SMK',
+    demo: 'https://ppdb-smk-pb.vercel.app/',                    
   },
   {
-    slug: 'ppdb-smp-mbs', 
-    name: 'PPDB SMP MBS', 
+    slug: 'ppdb-smp', 
+    name: 'PPDB SMP (Capstone Project)', 
     eyebrow: 'Admissions information system', 
     category: 'Frontend web', 
     accent: 'cyan',
