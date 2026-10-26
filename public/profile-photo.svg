@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
-  <rect width="400" height="500" fill="#141820"/>
-  <rect x="1" y="1" width="398" height="498" stroke="#2a3344" stroke-width="2" rx="16"/>
-  <circle cx="200" cy="175" r="56" stroke="#3d4d66" stroke-width="2"/>
-  <path d="M95 380c18-58 58-88 105-88s87 30 105 88" stroke="#3d4d66" stroke-width="2" stroke-linecap="round"/>
-  <text x="200" y="445" text-anchor="middle" fill="#6b7a94" font-family="system-ui, sans-serif" font-size="14">Letakkan foto formal di sini</text>
-</svg>
