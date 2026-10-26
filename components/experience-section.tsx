@@ -115,7 +115,7 @@ export function ExperienceSection() {
 
                       <div className="flex items-center gap-1.5 text-xs font-mono text-muted-foreground">
                         <Calendar size={13} className="text-cyan-400" />
-                        <span>{exp.period}</span>
+                        <span>{typeof exp.period === 'string' ? exp.period : exp.period[language]}</span>
                       </div>
                     </div>
 

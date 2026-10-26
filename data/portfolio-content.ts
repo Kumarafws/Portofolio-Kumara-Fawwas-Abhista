@@ -28,7 +28,7 @@ export interface ProjectItem {
 export interface ExperienceItem {
   role: { id: string; en: string }
   organization: string
-  period: string
+  period: string | { id: string; en: string }
   type: 'work' | 'organization'
   description: { id: string; en: string }
 }
@@ -283,7 +283,10 @@ export const experiencesData: ExperienceItem[] = [
       en: 'Full-Stack Developer'
     },
     organization: 'Tim Pengembang PPDB SMK Panca Bhakti Rakit',
-    period: '2025 — 2026',
+    period: {
+      id: 'Jan 2026 — Jun 2026',
+      en: 'Jan 2026 — Jun 2026'
+    },
     type: 'work',
     description: {
       id: 'Mengembangkan sistem penerimaan siswa baru berbasis web end-to-end, mulai dari perancangan skema database PostgreSQL, pengembangan REST API dengan Express.js, hingga integrasi antarmuka Next.js.',
@@ -296,7 +299,10 @@ export const experiencesData: ExperienceItem[] = [
       en: 'Teaching Assistant'
     },
     organization: 'Universitas Ahmad Dahlan',
-    period: '2025 — 2026',
+    period: {
+      id: 'Okt 2025 — Jan 2026',
+      en: 'Oct 2025 — Jan 2026'
+    },
     type: 'work',
     description: {
       id: 'Mendampingi dosen dalam pelaksanaan praktikum laboratorium mata kuliah Statistika & Probabilitas serta Infrastruktur Teknologi Informasi, membimbing mahasiswa dalam pemecahan masalah teknis.',
@@ -305,11 +311,14 @@ export const experiencesData: ExperienceItem[] = [
   },
   {
     role: {
-      id: 'Frontend Developer',
-      en: 'Frontend Developer'
+      id: 'Frontend Developer (Capstone Project)',
+      en: 'Frontend Developer (Capstone Project)'
     },
     organization: 'Tim Pengembang PPDB SMP MBS',
-    period: '2025',
+    period: {
+      id: 'Mar 2025 — Jul 2025',
+      en: 'Mar 2025 — Jul 2025'
+    },
     type: 'work',
     description: {
       id: 'Membangun antarmuka pengguna web yang responsif dengan React.js dan Tailwind CSS, serta mengintegrasikan komponen dengan REST API backend untuk sistem seleksi siswa.',
@@ -322,11 +331,30 @@ export const experiencesData: ExperienceItem[] = [
       en: 'Research & Development Division'
     },
     organization: 'Himpunan Mahasiswa Sistem Informasi (HMSI) UAD',
-    period: '2024 — 2025',
+    period: {
+      id: 'Jan 2024 — Des 2025',
+      en: 'Jan 2024 — Dec 2025'
+    },
     type: 'organization',
     description: {
       id: 'Menginisiasi dan mengoordinasikan kegiatan penguatan kompetensi akademik mahasiswa Sistem Informasi, termasuk kelompok belajar pemrograman dan persiapan kompetensi teknologi.',
       en: 'Initiated and coordinated academic development programs for Information Systems students, including coding study sessions and tech competition preparation.'
+    }
+  },
+  {
+    role: {
+      id: 'Ketua Pelaksana (Chairperson) — FIPEX 2024',
+      en: 'Chairperson — FIPEX 2024'
+    },
+    organization: 'FIPEX Innovation Exhibition — Universitas Ahmad Dahlan',
+    period: {
+      id: 'Agu 2024 — Des 2024',
+      en: 'Aug 2024 — Dec 2024'
+    },
+    type: 'organization',
+    description: {
+      id: 'Memimpin perencanaan dan pelaksanaan pameran inovasi teknologi tahunan tingkat universitas, mengoordinasikan kepanitiaan lintas divisi, dan kurasi karya inovasi mahasiswa.',
+      en: 'Led the overall planning and execution of the annual university-wide innovation exhibition, coordinating cross-functional committees and project curation.'
     }
   }
 ]
